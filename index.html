@@ -20,29 +20,42 @@
         Weather Dashboard
       </h1>
     </section>
-    <div class="field">
-      <label class="label is-size-3 has-text-weight-bold"
-        >Search for a city:</label
-      >
-      <div class="control">
-        <input
-          id="searchElement"
-          class="input"
-          type="text"
-          placeholder="Enter your city name here"
-        />
+    <main class="is-flex">
+      <div id="searchandHistory">
+        <div class="field">
+          <label class="label is-size-3 has-text-weight-bold"
+            >Search for a city:</label
+          >
+          <div class="control">
+            <input
+              id="searchElement"
+              class="input"
+              type="text"
+              placeholder="Enter your city name here"
+            />
+          </div>
+          <div class="control">
+            <button id="searchBtn" class="button is-primary">Search</button>
+          </div>
+        </div>
+        <section
+          id="searchHistory"
+          class="is-flex is-flex-direction-column"
+        ></section>
       </div>
-      <div class="control">
-        <button id="searchBtn" class="button is-primary">Search</button>
+      <div id="allWeather">
+        <div id="currentWeather" class="box is-hidden">
+          <h1 id="citynameEl" class="title"></h1>
+          <p id="citytempEl"></p>
+          <p id="citywindEl"></p>
+          <p id="cityhumEl"></p>
+        </div>
+        <div id="fivedayTitle" class="is-hidden">
+          <h1 class="title">5-day Forecast:</h1>
+        </div>
+        <div id="fivedaySection" class="control is-hidden is-flex"></div>
       </div>
-    </div>
-    <section id="searchHistory"></section>
-    <div id="currentWeather" class="box is-hidden">
-      <h1 id="citynameEl" class="title"></h1>
-      <p id="citytempEl"></p>
-      <p id="citywindEl"></p>
-      <p id="cityhumEl"></p>
-    </div>
+    </main>
   </body>
   <script src="./assets/javascript/script.js"></script>
 </html>
