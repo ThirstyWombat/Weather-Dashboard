@@ -89,7 +89,7 @@ function getcityInfo() {
 
         // console.log(cityLong);
 
-        let forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${cityLat}&lon=${cityLong}&appid=e6e752195833b1e15bb3055c75163dfd&units=imperial`;
+        let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${cityLat}&lon=${cityLong}&appid=e6e752195833b1e15bb3055c75163dfd&units=imperial`;
         // console.log(forecastUrl);
 
         return fetch(forecastUrl);
